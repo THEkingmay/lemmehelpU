@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+#app {
+  background-color:#4f5965;  
+  margin: 0 auto;
+  font-weight: normal;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+input[type="checkbox"]{
+  cursor: pointer;
+  
+}
+button{
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px 0.3px rgb(0, 0, 0,0.8);
+}
+
