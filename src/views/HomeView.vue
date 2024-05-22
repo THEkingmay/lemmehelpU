@@ -151,6 +151,9 @@ watch(headlineLength, () => {
         margin: 0 1rem;
         }
     @media screen and (max-width: 700px){
+        .header input{
+            font-size: 1rem
+        }
         .show{
             display: flex;
             flex-direction: column;
@@ -164,10 +167,10 @@ watch(headlineLength, () => {
             padding: 2rem;
         }
         .header button{
-        box-shadow:1px 1px 10px 1px rgba(0, 0, 0, 0.827);
-        margin-left: 1rem;
-        padding:1rem 1rem;
-        font-size: 1rem;
+            box-shadow:1px 1px 10px 1px rgba(0, 0, 0, 0.827);
+            margin-left: 1rem;
+            padding:1rem 1rem;
+            font-size: 1rem;
        }
     }
 </style>
