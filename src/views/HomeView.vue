@@ -49,12 +49,12 @@ watch(headlineLength, () => {
 </script>
 <template>
     <div class="header">
-        <input type="text" v-model="newdata.headline" placeholder="type something">
+        <input type="text" v-model="newdata.headline" placeholder="Add task">
         <div>
             <RouterLink :to="{ name:'detail' }" >
-                <button @click="updateHl"  :style="{ opacity: dtbt ? '1' : '0' ,transition:'opacity 0.3s ease'}">detail</button>
+                <button @click="updateHl">+ detail</button>
             </RouterLink>
-            <button @click="add" :style="{ opacity: dtbt ? '1' : '0' ,transition:'opacity 0.3s ease'}">Add</button>
+            <button @click="add">Add</button>
         </div>
     </div>
     <div class="show-con">
@@ -85,7 +85,7 @@ watch(headlineLength, () => {
     .header{
         z-index: 1;
         position:fixed;
-        margin-top:2rem;
+        margin-top:3rem;
         top: 0;
     }
     .header input{
@@ -103,7 +103,7 @@ watch(headlineLength, () => {
         margin-top: 1rem
     }
     .header button{
-        box-shadow:1px 1px 10px 1px rgba(0, 0, 0, 0.827);
+        box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.5);
         margin-left: 1rem;
         padding:1rem 2rem;
         font-size: 1.5rem;
@@ -111,9 +111,10 @@ watch(headlineLength, () => {
     .show-con{
         background-color:#3d444c;
         width: 80vw;
-        margin-top: 10rem;
+        margin-top: 12rem;
         padding: 2rem;
         border-radius: 1.5rem;
+        max-width: 1000px;
         box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.5);
     }
     button{

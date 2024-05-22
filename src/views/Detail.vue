@@ -23,16 +23,22 @@ const updateHl=()=>{   //ย้อนกลับไป home
 }
 </script>
 <template>
-   <input type="text" v-model="newdata.headline"><br>
-   <textarea rows="10" cols="30" v-model="newdata.description"></textarea><br>
-   <input type="date" v-model="newdata.date">
-
-   <RouterLink to='/' >
-      <button @click="updateHl">back</button>
-   </RouterLink>
-   <RouterLink to='/' >
-      <button @click="add" >Add</button>
-   </RouterLink>
+   <div class="container">
+        <div>Task name</div>
+        <input type="text" v-model="newdata.headline">
+        <div>Description</div>
+        <textarea rows="10" cols="30" v-model="newdata.description"></textarea>
+        <div>Date</div>
+        <input type="date" v-model="newdata.date">
+        <div class="con-bt">
+                <RouterLink to='/' >
+                    <button @click="updateHl">back</button>
+                </RouterLink>
+                <RouterLink to='/' >
+                    <button @click="add" >Add</button>
+                </RouterLink>
+        </div>
+   </div>
 </template>
 <style>
 </style>

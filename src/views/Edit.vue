@@ -17,13 +17,15 @@ const Update=()=>{
 }
 </script>
 <template>
-<div>
-    หัวข้อ
+<div class="container">
+    <div>Task name</div>
     <input type="text" v-model="olddata.headline">
-    คำอธิบาย
-    <textarea rows="10" cols="30" v-model="olddata.description"></textarea><br>
-    กำหนดส่ง
+    <div>Description</div>
+    <textarea rows="10" cols="30" v-model="olddata.description"></textarea>
+    <div>Date</div>
     <input type="date" v-model="olddata.date">
-    <RouterLink to='/'><button @click="Update">Edit</button></RouterLink>
+    <div class="con-bt">
+        <RouterLink to='/'><button @click="Update">Edit</button></RouterLink>
+    </div>
 </div>
 </template>
