@@ -17,7 +17,7 @@ const Update=()=>{
 }
 </script>
 <template>
-<div class="container">
+<div class="con">
     <div>Task name</div>
     <input type="text" v-model="olddata.headline">
     <div>Description</div>

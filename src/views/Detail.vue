@@ -22,8 +22,8 @@ const updateHl=()=>{   //ย้อนกลับไป home
     tasksStore.detailHl(newdata)
 }
 </script>
-<template>
-   <div class="container">
+<template >
+    <div class="con">
         <div>Task name</div>
         <input type="text" v-model="newdata.headline">
         <div>Description</div>
@@ -31,14 +31,13 @@ const updateHl=()=>{   //ย้อนกลับไป home
         <div>Date</div>
         <input type="date" v-model="newdata.date">
         <div class="con-bt">
-                <RouterLink to='/' >
-                    <button @click="updateHl">back</button>
-                </RouterLink>
-                <RouterLink to='/' >
-                    <button @click="add" >Add</button>
-                </RouterLink>
+            <RouterLink to='/' >
+                <button @click="updateHl">back</button>
+            </RouterLink>
+            <RouterLink to='/' >
+                <button @click="add" >Add</button>
+            </RouterLink>
         </div>
-   </div>
+    </div>
 </template>
-<style>
-</style>
+

@@ -105,17 +105,17 @@ watch(headlineLength, () => {
     .header button{
         box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.5);
         margin-left: 1rem;
-        padding:1rem 2rem;
-        font-size: 1.5rem;
+        padding:1rem 1rem;
+        font-size: 1rem;
     }
     .show-con{
-        background-color:#3d444c;
+        background-color:#4f5965; 
         width: 80vw;
         margin-top: 12rem;
         padding: 2rem;
         border-radius: 1.5rem;
-        max-width: 1000px;
-        box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
+        box-shadow: 1px 1px 6px 0.3px rgb(0, 0, 0,0.8);
     }
     button{
         background-color:#486285; 
@@ -132,7 +132,7 @@ watch(headlineLength, () => {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-        background-color:#dfecfa;
+        background-color:#eaf1fa; 
         border-radius: 1rem;     
         box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.5);
     }
